@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTs Ma'arif NU Sragi| Ekskul Detail</title>
+    <link rel="icon" href="foto/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <img src="logo mts.jpeg" alt="Logo MTs Ma'arif NU Sragi" class="h-10 mr-2">
+                            <span class="font-semibold text-green-600 text-lg">MTs Ma'arif NU Sragi</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-5 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Beranda</a>
+                    <a href="about.html" class="py-4 px-5 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Tentang</a>
+                    <a href="ekskul.html" class="py-4 px-5 text-green-600 font-semibold border-b-2 border-green-600">Ekstrakurikuler</a>
+                    <a href="blog.html" class="py-4 px-5 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Blog</a>
+                    <a href="contact.html" class="py-4 px-5 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Kontak</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-800" 
+                            x-show="!showMenu" 
+                            fill="none" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-800" 
+                            x-show="showMenu" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            style="display: none;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu md:hidden">
+            <ul>
+                <li><a href="index.html" class="block text-sm text-center px-2 py-4 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Beranda</a></li>
+                <li><a href="about.html" class="block text-sm text-center px-2 py-4 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Tentang</a></li>
+                <li><a href="ekskul.html" class="block text-sm text-center py-4 px-2 text-white font-semibold bg-green-600">Ekstrakurikuler</a></li>
+                <li><a href="blog.html" class="block text-sm text-center px-2 py-4 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Blog</a></li>
+                <li><a href="contact.html" class="block text-sm text-center px-2 py-4 text-gray-800 font-semibold hover:text-green-600 transition duration-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="relative bg-green-700 text-white py-20">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10 text-center animate__animated animate__fadeIn">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" id="ekskul-title">Nama Ekskul</h1>
+            <div class="flex justify-center items-center space-x-4">
+                <span class="flex items-center"><i class="fas fa-user mr-2"></i> <span id="ekskul-pembina">Pembina: Guru Olahraga</span></span>
+                <span class="flex items-center"><i class="fas fa-calendar-alt mr-2"></i> <span id="ekskul-jadwal">Senin & Kamis, 15.00-17.00</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 animate__animated animate__fadeIn">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/3 md:pr-8">
+                    <div class="mb-8">
+                        <img src="images/ekskul-placeholder.jpg" alt="Ekskul Image" class="w-full rounded-lg shadow-lg mb-6" id="ekskul-image">
+                        <div class="prose max-w-none" id="ekskul-description">
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Prestasi</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <ul class="space-y-3" id="ekskul-prestasi">
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Galeri Kegiatan</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="ekskul-gallery">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 mt-8 md:mt-0">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md sticky top-24">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Informasi Ekskul</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-500">Pembina</h4>
+                                <p class="text-gray-800" id="ekskul-pembina-side">Guru Olahraga</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-500">Jadwal</h4>
+                                <p class="text-gray-800" id="ekskul-jadwal-side">Senin & Kamis, 15.00-17.00</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-500">Tempat</h4>
+                                <p class="text-gray-800" id="ekskul-tempat">Lapangan Sekolah</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-500">Kuota</h4>
+                                <p class="text-gray-800" id="ekskul-kuota">30 siswa</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-500">Kategori</h4>
+                                <p class="text-gray-800" id="ekskul-kategori">Olahraga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Ekskul Lainnya</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="related-ekskul">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">MTs Ma'arif NU Sragi</h3>
+                    <p class="text-gray-400">Membentuk generasi unggul dengan pendidikan berkualitas dan karakter mulia.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Tautan Cepat</h3>
+                    <ul>
+                        <li class="mb-2"><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li class="mb-2"><a href="ekskul.html" class="text-gray-400 hover:text-white transition duration-300">Ekskul</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Kontak Kami</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Raya Kalijambe, Kalisih Wetan, Sragi, Kec. Sragi, Kabupaten Pekalongan, Jawa Tengah 51155</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+62 852-9091-9437</p>
+                    <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i>mtsnusragi@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/mtsnu.sragi/?locale=id_ID" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="https://x.com/MaSragi" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.instagram.com/mts._nu_sragi?igsh=MXZiNzI2MGNmY29nYw==" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://youtube.com/@mtsnusa4821?si=BHR58VH-GuTDjAmK" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MTs Ma'arif NU Sragi. All rights reserved. <a href="https://lynk.id/noxarianet">By Noxarianet</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dataEkskul.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

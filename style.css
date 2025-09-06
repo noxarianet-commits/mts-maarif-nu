@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate__delay-02s {
+    animation-delay: 0.2s;
+}
+
+.animate__delay-04s {
+    animation-delay: 0.4s;
+}
+
+.animate__delay-06s {
+    animation-delay: 0.6s;
+}
+
+.shadow-lg-blue {
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 10px 10px -5px rgba(59, 130, 246, 0.04);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+.prose {
+    max-width: 100%;
+    color: #4b5563;
+    line-height: 1.75;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+    color: #111827;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+.prose h2 {
+    font-size: 1.5em;
+}
+
+.prose h3 {
+    font-size: 1.25em;
+}
+
+.prose p {
+    margin-bottom: 1.25em;
+}
+
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1.25em;
+}
+
+.prose li {
+    margin-bottom: 0.5em;
+}
+
+.prose strong {
+    font-weight: 600;
+}
+
+.mobile-menu {
+    transition: all 0.3s ease-out;
+    transform-origin: top;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mobile-menu.block {
+    max-height: 500px;
+}
+
+.mobile-menu-button svg {
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-button .hidden {
+    display: none;
+}
+
+.mobile-menu li a.bg-blue-600 {
+    background-color: #2563eb;
+    color: white;
+}
